@@ -12,20 +12,14 @@ public class StringTest {
        scores[1] = 59;
        score.printScores();
 
-       // 观察string怎么避免这个问题的
-//       new String("Hello");
 
-        // 观察equals的实现
-        "Hello".equals("aa");
     }
 }
 
 class Score {
     private final int[] scores;
     public Score(int[] scores) {
-
-//        this.scores = scores.clone();
-        this.scores = scores;
+        this.scores = scores.clone();
     }
 
     public void printScores() {
